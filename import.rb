@@ -105,11 +105,3 @@ db_connection do |conn|
    )
  end
 end
-puts "hello"
-puts db_connection { |conn| conn.exec('SELECT * FROM invoices;') }.to_a
-
-
-# puts db_connection { |conn| conn.exec('SELECT * FROM employees;') }.to_a
-# puts db_connection { |conn| conn.exec('SELECT * FROM customers;') }.to_a
-# puts db_connection { |conn| conn.exec('SELECT * FROM products;') }.to_a
-# puts db_connection { |conn| conn.exec('SELECT * FROM frequencies;') }.to_a
